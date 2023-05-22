@@ -17,7 +17,7 @@ function countBits($n)
 {
 
   // Program Me
-  
+
   $r = '';
   $q = [];
   $count = '';
@@ -62,4 +62,11 @@ function countBits($n)
 
 }
 
+}
+
+
+// Solution 2
+function countBitsTwo($n)
+{
+  return substr_count(decbin($n), 1);
 }
